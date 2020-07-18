@@ -25,10 +25,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+   The difference is that cookies are for sending and storing arbitrary data, whereas bearer tokens are specifically for sending authorization data.
 
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+   becrypt uses a salt and a hash algorithm over accumalative hashing round to deeply bury the original hidden data
 
 3. How are unit tests different from integration and end-to-end testing.
+   The end-to-end tests that rely on external components, unit tests are not flaky.  They have one major advantage over unit tests: they ensure that modules which work well in isolation, also play well together. Integration tests typically focus on a small number of modules and test their interactions
 
 4. How _Test Driven Development_ changes the way we write applications and tests.
 
